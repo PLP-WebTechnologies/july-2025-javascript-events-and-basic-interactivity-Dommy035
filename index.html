@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Demo</h1>
+    <button id="themeToggle">🌞 mode</button>
+  </header>
+
+  <main>
+    <!-- Part 2: Counter Game -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Clicks: <span id="counterValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <!-- Part 2: Collapsible FAQ -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">JavaScript is a programming language for the web.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <div class="faq-answer">DOM stands for Document Object Model.</div>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>Name: <input type="text" id="name" name="name"></label>
+        <small class="error" id="nameError"></small>
+
+        <label>Email: <input type="email" id="email" name="email"></label>
+        <small class="error" id="emailError"></small>
+
+        <label>Password: <input type="password" id="password" name="password"></label>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
